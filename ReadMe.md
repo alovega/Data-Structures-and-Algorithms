@@ -1,6 +1,6 @@
-#Data Structures
+# Data Structures
 
-###Linked List
+### Linked List
 ```
 In arrays  data is stored in contigous memory location data is stored in contigous memory location for instance if
  the first item is stored at index 10 and is of size 15 bytes the next item will be stored at location 10 + 15 + 1
@@ -8,7 +8,7 @@ In arrays  data is stored in contigous memory location data is stored in contigo
 But for linked list data is not stored at contigous memory location for each item in memory location linked list
  stores the value of the item and the reference or pointer to the next item which constitutes of a node
 ```
-#####Advantages of using a lined list
+##### Advantages of using a lined list
 ```
 1. A linked list is a dynamic datastructure which means memory reserved for it can be reduced or increased at run time.
 
