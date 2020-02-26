@@ -178,13 +178,43 @@ class LinkedList:
 		:return:
 		"""
 		if self.start_node is None:
-			print "the list has no element to delete"
+			print "The list has no element to delete"
 			return
 		n = self.start_node
 		while n.ref.ref is not None:
 			n = n.ref
 		n.ref = None
 
+	def delete_element_by_value(self, x):
+		"""
+		delete the element value x if it exist in the linked list
+		:param x:
+		:return:
+		"""
+		if self.start_node is None:
+			print "The list has no element"
+			return
+		n = self.start_node
+		while n.ref is not None:
+			if n.ref.item == x:
+				break
+			n = n.ref
+		if n.ref is None:
+			print "Item not in list"
+		else:
+			n.ref = n.ref.ref
 
-
+	def reverse_list(self):
+		"""
+		reverse the linked list
+		:return:
+		"""
+		prev = None
+		n = self.start_node
+		while n is not None:
+			next = n.ref
+			n.ref = prev
+			prev = n
+			n = next
+			self.start_node = prev
 
